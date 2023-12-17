@@ -1667,9 +1667,9 @@
                     "<input type=text class=jsColor name=" + themeInputs[i].name + " value=" + (bEdit ? tEdit[themeInputs[i].name] : "") + "></label>";
 
                 innerHTML += "<label id=customCSS><span class='option-title'>Custom CSS:</span><textarea name=customCSS>" + (bEdit ? tEdit.customCSS || "" : "") + "</textarea>" +
-                    "</label><div>" +
+                    "</label><p class="buttons-container">" +
                     "<a class='options-button' name=export>Export</a>" +
-                    "<a class='options-button' name=" + (bEdit ? "edit" : "add") + ">Save</a><a class='options-button' name=cancel>Cancel</a></div>";
+                    "<a class='options-button' name=" + (bEdit ? "edit" : "add") + ">Save</a><a class='options-button' name=cancel>Cancel</a></p>";
 
                 div.html(innerHTML);
                 $(".jsColor", div).jsColor();
